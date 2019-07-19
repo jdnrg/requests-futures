@@ -20,7 +20,7 @@ packages = [
 
 requires = [
     'requests>=1.2.0',
-    'futures>=2.1.3; python_version<"3.2"'
+    #'futures>=2.1.3; python_version<"3.2"'
 ]
 
 setup(
