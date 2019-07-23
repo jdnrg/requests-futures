@@ -89,10 +89,7 @@ class FuturesSession(Session):
             func = partial(Session.request, self)
 
         background_callback = kwargs.pop('background_callback', None)
-        if background_callback:
-            logger = getLogger(self.__class__.__name__)
-            logger.warning('`background_callback` is deprecated and will be '
-                        'removed in 1.0, use `hooks` instead')
+        if background_callback:            
             func = partial(wrap, self, func, background_callback)
 
         if isinstance(self.executor, ProcessPoolExecutor):
