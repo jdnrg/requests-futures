@@ -35,7 +35,7 @@ setup(
     package_data={'requests_futures': ['LICENSE', 'README.rst']},
     include_package_data=True,
     install_requires=requires,
-    setup_requires=['setuptools>=38.6.1'],
+    setup_requires=["setuptools==43.0.0"],
     license='Apache License v2',
     url='https://github.com/ross/requests-futures',
     zip_safe=False,
